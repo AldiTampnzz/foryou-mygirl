@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffebcd;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #ff4500;
+        }
+        button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Ulang Tahun!</h1>
+    <p>Semoga harimu menyenangkan dan penuh kebahagiaan!</p>
+    <button onclick="playMusic()">Putar Musik</button>
+    <audio id="birthdaySong" src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3"></audio>
+    <script>
+        function playMusic() {
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+</body>
+</html>
